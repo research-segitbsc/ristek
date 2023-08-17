@@ -1,0 +1,200 @@
+body{
+ background-color: #060c1d;
+ color: #cad2e7;
+ height: 100vh;
+ font-family: 'Nimbus Sans', 'Helvetica Neue', Roboto, sans-serif;
+ margin: 0;
+}
+a{
+ color: inherit;
+ text-decoration: none;
+ -webkit-transition: color 0.3s ease;
+ -moz-transition: color 0.3s ease;
+}
+a:hover{
+ color: #ffffff;
+}
+h1{
+ font-size: 4em;
+ margin: 0;
+}
+h2{
+ font-size: 2em;
+ margin: 0;
+}
+h3{
+ font-size: 1.5em;
+ margin: 10px 0 10px 0;
+}
+.text-header{
+ color: #84a6ff;
+}
+.fa{
+ color: #1974BB;
+}
+.navbar-container{
+ align-items: center;
+ background-color: #060c1d80;
+ backdrop-filter: blur(10px);
+ -webkit-backdrop-filter: blur(10px);
+ position: fixed;
+ top: 0;
+ width: 100%;
+ z-index: 100;
+}
+.navbar{
+ display: flex;
+ font-size: 2em;
+ justify-content: space-between;
+ padding: 10px 20px 10px 20px;
+}
+.navbar-logo{
+ background-image: url("./assets/logo/ristek-logo.svg");
+ background-size: cover;
+ width: 25px;
+ height: 45px;
+}
+.navbar-menu{
+ display: none;
+}
+.navbar-dropdown{
+ color: #1974BB;
+ display: grid;
+ font-size: 1.5em;
+ height: 450px;
+ text-align: center;
+}
+.navbar-dropdown.hidden{
+ display: none;
+}
+.dropdown-menu{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+.main{
+ padding: 100px 30px 20px 30px;
+}
+.title-container{
+ padding: 20px 0 20px 0;
+}
+.articles-container{
+ padding: 20px 0 20px 0;
+}
+.article-list-container{
+ display: flex;
+ gap: 20px;
+}
+.article-title-container{
+ display: flex;
+}
+.article-bullet{
+ color: #1974BB;
+ font-size: 3em;
+ height: 20px;
+ margin-right: -20px;
+ position: relative;
+ right: 30px;
+}
+.article-title{
+ margin: 0;
+}
+.article-detail{
+ align-items: center;
+ display: flex;
+ font-size: 0.9em;
+ gap: 10px;
+ .fa{
+  font-size: 0.9em;
+ }
+}
+.article-timeline{
+ background-color: #1974BB;
+ margin-left: 10px;
+ width: 3px;
+ height: auto;
+}
+.footer{
+ color: #1974BB;
+ font-size: 0.8em;
+ text-align: center;
+}
+.footer-links{
+ background: linear-gradient(90deg, #1974BB 0%, #330185 100%);
+ -webkit-text-fill-color: transparent;
+ -moz-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ padding: 0 0 20px 0;
+}
+.instagram, .linkedin, .github{
+ margin: 0 20px 0 20px;
+}
+.footer-logo{
+ padding: 20px 20px 20px 20px;
+}
+.ristek-logo-compact, .rnc-logo-compact, .seg-itb-sc-logo{
+ height: 80px;
+ width: auto;
+}
+.tagline{
+ background: linear-gradient(90deg, #1974BB 0%, #330185 100%);
+ -webkit-text-fill-color: transparent;
+ -moz-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+}
+::-webkit-scrollbar{
+ height: 3px;
+ width: 8px;
+ border-radius: 0;
+ background-color: #12122c;
+}
+::-webkit-scrollbar-thumb{
+ border-radius: 5px;
+ background: linear-gradient(#1974BB 0%, #330185 100%);
+}
+@media screen and (min-width: 900px) {
+h1{
+ font-size: 5em;
+}
+h2{
+ font-size: 2.3em;
+}
+h3{
+ font-size: 2em;
+}
+.navbar{
+ padding: 10px 100px 10px 100px;
+}
+.navbar-dropdown-menu-toggle, .navbar-dropdown{
+ display: none;
+}
+.navbar-menu{
+ background: linear-gradient(90deg, #1974BB 0%, #330185 100%);
+ -webkit-text-fill-color: transparent; 
+ -moz-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+ align-items: center;
+ display: flex;
+ font-size: 0.6em;
+ gap: 20px;
+ height: auto;
+ .fa{
+  font-size: 1.2em;
+ }
+}
+.main{
+ padding: 80px 100px 40px 100px;
+}
+.article-detail{
+ font-size: 1em;
+}
+.footer-links{
+ font-size: 2em;
+}
+.ristek-logo-compact, .rnc-logo-compact, .seg-itb-sc-logo{
+ height: 120px;
+}
+}
