@@ -12,7 +12,7 @@ a{
  -moz-transition: color 0.3s ease;
 }
 a:hover{
- color: #ffffff;
+ color: #1974BB;
 }
 h1{
  font-size: 4em;
@@ -135,6 +135,13 @@ h3{
  -moz-background-clip: text;
  padding: 20px 0 20px 0;
 }
+.footer-links a:hover{
+ background: linear-gradient(90deg, #cdd8fb 0%, #ffffff 100%);
+ -webkit-text-fill-color: transparent; 
+ -moz-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
+}
 .instagram, .linkedin, .github{
  margin: 0 20px 0 20px;
 }
@@ -196,6 +203,13 @@ h3{
  .fa{
   font-size: 1.2em;
  }
+}
+.navbar-menu a:hover{
+ background: linear-gradient(90deg, #cdd8fb 0%, #ffffff 100%);
+ -webkit-text-fill-color: transparent; 
+ -moz-text-fill-color: transparent;
+ -webkit-background-clip: text;
+ -moz-background-clip: text;
 }
 .main{
  padding: 80px 100px 40px 100px;
