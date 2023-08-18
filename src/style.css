@@ -1,3 +1,23 @@
+@-webkit-keyframes slideup{
+ 0%{
+  transform: translateY(50px);
+  opacity: 0;
+ }
+ 100%{
+  transform: translateY(0px);
+  opacity: 1;
+ }
+}
+@-moz-keyframes slideup{
+ 0%{
+  transform: translateY(50px);
+  opacity: 0;
+ }
+ 100%{
+  transform: translateY(0px);
+  opacity: 1;
+ }
+}
 body{
  background-color: #060c1d;
  color: #cad2e7;
@@ -19,18 +39,63 @@ h1{
  margin: 0;
 }
 h2{
- font-size: 1.8em;
+ font-size: 2em;
  margin: 0;
 }
 h3{
  font-size: 1.5em;
  margin: 10px 0 10px 0;
 }
+p{
+ font-size: 1.2em;
+}
 .text-header{
  color: #84a6ff;
 }
 .fa{
  color: #1974BB;
+}
+.loading{
+ align-items: center;
+ background-color: #060c1d;
+ display: flex;
+ height: 100%;
+ justify-content: center;
+ position: fixed;
+ width: 100%;
+ z-index: 200;
+}
+.loading-logo{
+ display: flex;
+ height: 150px;
+ margin: auto;
+}
+.loading-container{ 
+ -webkit-animation: blips 1s ease infinite;
+ -moz-animation: blips 1s ease infinite;
+}
+.loading-text{
+ margin-top: 50px;
+ text-align: center;
+}
+@-webkit-keyframes blips{
+ 0%{
+  opacity: 0.3;
+ }
+ 50%{
+  opacity: 1;
+ }
+ 100%{
+  opacity: 0.3;
+ }
+}
+@-moz-keyframes blips{
+ 0%{
+  opacity: 1;
+ }
+ 100%{
+  opacity: 0;
+ }
 }
 .navbar-container{
  align-items: center;
@@ -78,6 +143,7 @@ h3{
  justify-content: center;
 }
 .main{
+ animation: slideup 1s ease;
  padding: 70px 30px 20px 30px;
 }
 .title-container{
@@ -146,10 +212,16 @@ h3{
  margin: 0 20px 0 20px;
 }
 .footer-logo{
- padding: 10px 20px 10px 20px;
+ align-items: start;
+ display: flex;
+ justify-content: center;
 }
-.ristek-logo-compact, .rnc-logo-compact, .seg-itb-sc-logo{
+.ristek-logo-compact, .seg-itb-sc-logo{
  height: 80px;
+ width: auto;
+}
+.rnc-logo-compact{
+ height: 100px;
  width: auto;
 }
 .tagline{
@@ -178,7 +250,7 @@ h1{
  font-size: 5em;
 }
 h2{
- font-size: 2.3em;
+ font-size: 2.5em;
 }
 h3{
  font-size: 2em;
@@ -219,8 +291,5 @@ h3{
 }
 .footer-links{
  font-size: 2em;
-}
-.ristek-logo-compact, .rnc-logo-compact, .seg-itb-sc-logo{
- height: 120px;
 }
 }
