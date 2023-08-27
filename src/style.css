@@ -4,7 +4,7 @@
   opacity: 0;
  }
  100%{
-  transform: translateY(0px);
+  transform: translateY(inherit);
   opacity: 1;
  }
 }
@@ -14,7 +14,7 @@
   opacity: 0;
  }
  100%{
-  transform: translateY(0px);
+  transform: translateY(inherit);
   opacity: 1;
  }
 }
@@ -22,7 +22,7 @@ body{
  background-color: #060c1d;
  color: #cad2e7;
  height: 100vh;
- font-family: 'Nimbus Sans', 'Helvetica Neue', Roboto, sans-serif;
+ font-family: 'Plus Jakarta Sans', 'Helvetica Neue', Roboto, sans-serif;
  margin: 0;
 }
 a{
