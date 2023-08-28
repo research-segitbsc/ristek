@@ -186,7 +186,7 @@ p{
  height: auto;
 }
 .spacer{
- padding: 50px 0 50px 0;
+ padding: 20vw 0 20vw 0;
 }
 .footer{
  color: #1974BB;
@@ -284,10 +284,13 @@ h3{
  -moz-background-clip: text;
 }
 .main{
- padding: 80px 100px 40px 100px;
+ padding: 100px 100px 40px 100px;
 }
 .article-detail{
  font-size: 1em;
+}
+.spacer{
+ padding: 15vh 0 15vh 0;
 }
 .footer-links{
  font-size: 2em;
