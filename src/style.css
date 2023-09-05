@@ -133,11 +133,7 @@ p{
  display: none;
 }
 .dropdown-menu{
- background: linear-gradient( #1974BB 0%, #330185 100%);
- -webkit-text-fill-color: transparent;
- -moz-text-fill-color: transparent;
- -webkit-background-clip: text;
- -moz-background-clip: text;
+ color: #1974BB;
  display: flex;
  align-items: center;
  justify-content: center;
@@ -192,13 +188,10 @@ p{
  color: #1974BB;
  font-size: 0.8em;
  text-align: center;
+ scale: 0.8;
 }
 .footer-links{
- background: linear-gradient(90deg, #1974BB 0%, #330185 100%);
- -webkit-text-fill-color: transparent;
- -moz-text-fill-color: transparent;
- -webkit-background-clip: text;
- -moz-background-clip: text;
+ color: #1974BB;
  padding: 20px 0 20px 0;
 }
 .footer-links a:hover{
@@ -262,14 +255,10 @@ h3{
  display: none;
 }
 .navbar-menu{
- background: linear-gradient(90deg, #1974BB 0%, #330185 100%);
- -webkit-text-fill-color: transparent; 
- -moz-text-fill-color: transparent;
- -webkit-background-clip: text;
- -moz-background-clip: text;
+ color: #1974BB;
  align-items: center;
  display: flex;
- font-size: 0.6em;
+ font-size: 0.55em;
  gap: 20px;
  height: auto;
  .fa{
