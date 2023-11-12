@@ -19,7 +19,7 @@
  }
 }
 body{
- background-color: #060c1d;
+ background-color: #0e121d;
  color: #cad2e7;
  height: 100vh;
  font-family: 'Plus Jakarta Sans', 'Helvetica Neue', Roboto, sans-serif;
@@ -99,7 +99,7 @@ p{
 }
 .navbar-container{
  align-items: center;
- background-color: #060c1d80;
+ background-color: #0e121d80;
  backdrop-filter: blur(10px);
  -webkit-backdrop-filter: blur(10px);
  position: fixed;
@@ -142,18 +142,43 @@ p{
  animation: slideup 1s ease;
  padding: 70px 30px 20px 30px;
 }
-.title-container{
- padding: 20px 0 20px 0;
+.go-to-page a{
+ display: flex;
+ width: fit-content;
+ align-items: center;
+ gap: 5px;
+ padding: 10px 10px 10px 10px;
+ margin: 20px 10px 40px 0px;
+ color: #1974BB;
+ border: solid;
+ border-color: #1974BB;
+ border-radius: 15px;
+ border-width: 1px;
 }
-.articles-container{
+.go-to-page a:hover{
+ color: #cad2e7;
+ border-color: #cad2e7;
+ .fa{
+    color: #cad2e7;
+ }
+}
+.title-container{
  padding: 20px 0 20px 0;
 }
 .article-list-container{
  display: flex;
  gap: 20px;
 }
+
+.competition-list-container{
+ display: grid;
+ max-height: 500px;
+ padding: 10px 10px 10px 0px;
+ gap: 20px;
+ overflow-y: scroll;
+}
 .article-title-container{
- display: flex;
+ display: grid;
 }
 .article-bullet{
  color: #1974BB;
@@ -175,14 +200,94 @@ p{
   font-size: 0.9em;
  }
 }
+.article-date, .article-read-time{
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}
 .article-timeline{
  background-color: #1974BB;
  margin-left: 10px;
  width: 1.5px;
  height: auto;
 }
+.competition-container{
+ background-color: #141824;
+ padding: 20px 20px 20px 20px;
+ border-radius: 15px;
+}
+.competition-table{
+ display: flex;
+ overflow-x: scroll;
+}
+table{
+ background-color: #141824;
+ border-radius: 15px;
+ margin: 20px 0 20px 0;
+ border-collapse: collapse;
+}
+table tbody{
+ display: table;
+ width: 100%;
+}
+td, th {
+ text-align: left;
+ padding: 15px 15px 15px 15px;
+}
+ 
+tr:nth-child(even) {
+ background-color: #181c28;
+}
+.competition-container:hover{
+ background-color: #1974BB20;
+ -webkit-transition: background-color 0.3s ease;
+ -moz-transition: background-color 0.3s ease;
+}
+.competition-date{
+ display: flex;
+ width: fit-content;
+ padding: 5px 10px 5px 10px;
+ color: #1974BB;
+ border: solid;
+ border-color: #1974BB;
+ border-radius: 10px;
+ border-width: 1px;
+}
+.competition-detail{
+ display: flex;
+ gap: 10px;
+}
+.competition-category, .competition-link{
+ display: flex;
+ padding: 5px 5px 5px 5px;
+ gap: 5px;
+ color: #1974BB;
+ align-items: center;
+ border: solid;
+ border-color: #1974BB;
+ border-radius: 10px;
+ border-width: 1px;
+ -webkit-transition: color 0.3s ease;
+ -moz-transition: color 0.3s ease;
+}
+.competition-link:hover{
+ color: #cad2e7;
+ border-color: #cad2e7;
+ .fa{
+    color: #cad2e7;
+ }
+}
+.figures{
+ align-items: center;
+ text-align: center;
+
+}
+.figures img{
+ width: 300px;
+ height: auto;
+}
 .spacer{
- padding: 20vw 0 20vw 0;
+ padding: 10vw 0 0 0;
 }
 .footer{
  color: #1974BB;
@@ -229,14 +334,14 @@ p{
  padding: 20px 0 20px 0;
 }
 ::-webkit-scrollbar{
- height: 3px;
- width: 8px;
+ height: 10px;
+ width: 10px;
  border-radius: 0;
  background-color: #12122c;
 }
 ::-webkit-scrollbar-thumb{
  border-radius: 5px;
- background: linear-gradient(#1974BB 0%, #330185 100%);
+ background: linear-gradient(#1974BB 0%, #1974BB 100%);
 }
 @media screen and (min-width: 900px) {
 h1{
@@ -273,10 +378,14 @@ h3{
  -moz-background-clip: text;
 }
 .main{
- padding: 100px 100px 40px 100px;
+ padding: 50px 100px 50px 100px;
 }
 .article-detail{
  font-size: 1em;
+}
+.figures img{
+ width: 500px;
+ height: auto;
 }
 .spacer{
  padding: 15vh 0 15vh 0;
