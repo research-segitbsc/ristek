@@ -180,16 +180,22 @@ p{
 .article-title-container{
  display: grid;
 }
+.article-title-container a{
+ background-color: #141824;
+ padding: 20px 20px 20px 20px;
+ border-radius: 15px;
+ margin: 0px 0px 20px 0px;
+}
 .article-bullet{
  color: #1974BB;
  font-size: 2.5em;
- height: 20px;
+ height: 0px;
  margin-right: -10px;
  position: relative;
  right: 31px;
 }
 .article-title{
- margin: 0;
+ margin: 0px 0px 10px 0px;
 }
 .article-detail{
  align-items: center;
@@ -334,8 +340,8 @@ tr:nth-child(even) {
  padding: 20px 0 20px 0;
 }
 ::-webkit-scrollbar{
- height: 10px;
- width: 10px;
+ height: 8px;
+ width: 8px;
  border-radius: 0;
  background-color: #12122c;
 }
